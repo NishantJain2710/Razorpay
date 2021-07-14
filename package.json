@@ -1,0 +1,19 @@
+{
+  "name": "razorpay-tutorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon backend/app.js"
+  },
+  "author": "Nishant Jain",
+  "license": "ISC",
+  "dependencies": {
+    "crypto-js": "^4.0.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "razorpay": "^2.0.6"
+  }
+}
