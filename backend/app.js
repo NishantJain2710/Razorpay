@@ -73,6 +73,10 @@ app.post('/razorpay/capture/:paymentID',(req,res)=>{
     }
 })
 
+if(process.env.NODE_ENV === 'production'){
+    app.use(express.static('frontend/build'))
+}
+
 const PORT = process.env.PORT || 5000;
 app.listen(PORT,()=>{
     console.log(`app is running on port ${PORT}`);
